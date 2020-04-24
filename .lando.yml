@@ -1,11 +1,13 @@
 name: social-buying-api
-services:
-  appserver:
-    type: node
+recipe: mean
+config:
+  port: 3030
+  build:
+    - npm install @feathersjs/cli
+  command: npm dev
 tooling:
   feathers:
     service: appserver
     description: "FeathersJS"
     cmd:
       - /app/node_modules/.bin/feathers
-
