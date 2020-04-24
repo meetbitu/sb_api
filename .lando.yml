@@ -1,0 +1,11 @@
+name: social-buying-api
+services:
+  appserver:
+    type: node
+tooling:
+  feathers:
+    service: appserver
+    description: "FeathersJS"
+    cmd:
+      - /app/node_modules/.bin/feathers
+
