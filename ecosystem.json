@@ -2,7 +2,6 @@
   "apps" : [{
     "name": "SB API",
     "script": "src/index.js",
-    "instance_var": "INSTANCE_ID",
     "env": {
       "NODE_ENV": "development"
     },
