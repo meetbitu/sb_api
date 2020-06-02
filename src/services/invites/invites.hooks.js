@@ -13,21 +13,23 @@ const limitToUser = setField({
 
 module.exports = {
   before: {
-    all: [
-      authenticate('jwt'),
-    ],
+    all: [],
     find: [],
     get: [],
     create: [
+      authenticate('jwt'),
       setUserId,
     ],
     update: [
+      authenticate('jwt'),
       limitToUser,
     ],
     patch: [
+      authenticate('jwt'),
       limitToUser,
     ],
     remove: [
+      authenticate('jwt'),
       limitToUser,
     ]
   },
