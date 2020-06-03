@@ -111,4 +111,4 @@ lib/
 data/
 
 # Production config
-# config/production.json
+config/production.json
